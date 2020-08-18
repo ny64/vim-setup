@@ -68,8 +68,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ap/vim-css-color'
-
+Plug 'ajh17/VimCompletesMe'
 call plug#end()
 
 " Settings 
 map <C-n> :NERDTreeToggle<CR>
+autocmd FileType vim let b:vcm_tab_complete = 'vim'
