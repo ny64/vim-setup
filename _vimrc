@@ -1,6 +1,15 @@
 "" Syntax highlighting
 syntax on
+
+" Lightline settings
+set laststatus=2
+let g:lightline = {
+    \ 'colorscheme': 'PaperColor'
+    \ }
+
+" Colorscheme
 colorscheme one
+set background=light
 
 "" Display line numbers 
 set number
@@ -50,3 +59,13 @@ let g:netrw_banner = 0
 let g:netrw_browse_split = 3
 " Set netrw window size (25%)
 let g:netrw_winsize = 25
+
+" load vim-plug plugin
+call plug#begin('~/.vim/plugged')
+
+"" Plugins
+Plug 'itchyny/lightline.vim'
+Plug 'Valloric/YouCompleteMe.git'
+
+call plug#end()
+
