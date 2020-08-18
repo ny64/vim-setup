@@ -72,5 +72,5 @@ Plug 'ajh17/VimCompletesMe'
 call plug#end()
 
 " Settings 
-map <C-n> :NERDTreeToggle<CR>
+map <C-Bslash> :NERDTreeToggle<CR>
 autocmd FileType vim let b:vcm_tab_complete = 'vim'
