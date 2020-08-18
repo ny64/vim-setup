@@ -1,6 +1,6 @@
 "" Syntax highlighting
 syntax on
-colorscheme wombat256grf
+colorscheme one
 
 "" Display line numbers 
 set number
