@@ -65,7 +65,11 @@ call plug#begin('~/.vim/plugged')
 
 "" Plugins
 Plug 'itchyny/lightline.vim'
-Plug 'Valloric/YouCompleteMe.git'
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
+" Settings 
+map <C-n> :NERDTreeToggle<CR>
