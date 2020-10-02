@@ -14,6 +14,9 @@ set background=light
 "" Display line numbers 
 set number
 
+"" Display line limiter
+set colorcolumn=80
+
 "" Space tab settings
 " Enable auto indent
 filetype indent plugin on
@@ -74,3 +77,8 @@ call plug#end()
 " Settings 
 map <C-Bslash> :NERDTreeToggle<CR>
 autocmd FileType vim let b:vcm_tab_complete = 'vim'
+
+"" Notes
+" Find string in files:
+"[:vim foo **/*.js | copen]
+
