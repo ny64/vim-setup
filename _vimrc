@@ -16,6 +16,7 @@ set number
 
 "" Display line limiter
 set colorcolumn=80
+highlight colorcolumn ctermbg=magenta
 
 "" Space tab settings
 " Enable auto indent
