@@ -9,14 +9,15 @@ let g:lightline = {
 
 " Colorscheme
 colorscheme one
-set background=dark
+set background=light
+set colorcolumn=80
+highlight colorcolumn ctermbg=lightgray
+" Press F8 to change background theme
+map <F8> :set background=dark \| highlight colorcolumn ctermbg=234<CR>
+map <S-F8> :set background=light \| highlight colorcolumn ctermbg=lightgray<CR>
 
 "" Display line numbers 
 set number
-
-"" Display line limiter
-set colorcolumn=80
-highlight colorcolumn ctermbg=darkgray
 
 "" Space tab settings
 " Enable auto indent
