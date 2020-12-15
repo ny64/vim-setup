@@ -9,12 +9,12 @@ let g:lightline = {
 
 " Colorscheme
 colorscheme one
-set background=light
+set background=dark
 set colorcolumn=80
-highlight colorcolumn ctermbg=lightgray
+highlight colorcolumn ctermbg=234
 " Press F8 to change background theme
-map <F8> :set background=dark \| highlight colorcolumn ctermbg=234<CR>
-map <S-F8> :set background=light \| highlight colorcolumn ctermbg=lightgray<CR>
+map <F8> :set background=light \| highlight colorcolumn ctermbg=lightgray<CR>
+map <S-F8> :set background=dark \| highlight colorcolumn ctermbg=234<CR>
 
 "" Display line numbers 
 set number
@@ -45,7 +45,11 @@ inoremap        {  {}<Left>
 inoremap <expr> }  strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 inoremap <expr> "  strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>"
 inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
-
+" Change tab
+execute "set <M-j>=\ej"
+execute "set <M-k>=\ek"
+nnoremap <M-j> :tabp<CR>
+nnoremap <M-k> :tabn<CR>
 "" Netrw settings
 " List style
 let g:netrw_liststyle = 3
