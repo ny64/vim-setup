@@ -1,8 +1,7 @@
 vim-setup
 -------------------
 
-Simple .vimrc and colorschemes.<br>
-Other than that I like to have Kite installed and running. 
+Simple .vimrc and colorschemes.
 
 #### Colorschemes used 
 
