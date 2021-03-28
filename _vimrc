@@ -77,7 +77,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ap/vim-css-color'
-Plug 'ajh17/VimCompletesMe'
 call plug#end()
 
 " Settings 
