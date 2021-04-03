@@ -4,6 +4,7 @@ syntax on
 colorscheme codedark
 set background=dark
 highlight Normal ctermbg=black
+highlight EndOfBuffer ctermbg=black
 
 set number
 highlight LineNr ctermbg=black
@@ -16,15 +17,16 @@ function! ChangeTheme()
     if g:LightTheme
         let g:LightTheme = 0
         colorscheme codedark
-        silent set background=dark
-        silent highlight Normal ctermbg=black
-        silent highlight colorcolumn ctermbg=234
+        set background=dark
+        highlight Normal ctermbg=black
+        highlight EndOfBuffer ctermbg=black
+        highlight colorcolumn ctermbg=234
         highlight LineNr ctermbg=black
     else 
         let g:LightTheme = 1
         colorscheme PaperColor
-        silent set background=light
-        silent highlight colorcolumn ctermbg=lightgray
+        set background=light
+        highlight colorcolumn ctermbg=lightgray
     endif
 endfunction
 map <F8> :call ChangeTheme()<CR>
