@@ -1,9 +1,9 @@
-vim-setup
--------------------
+Ny64's extraordinary ***VIM*** configuration
+--------------------------------------------
 
 The best vim configuration there is.
 
-### Keybindings
+## Bindings
 | Binding | Function |
 |---------|----------|
 | <kbd>Ctrl</kbd> + <kbd>\\</kbd> | Open file explorer |
@@ -11,7 +11,7 @@ The best vim configuration there is.
 | <kbd>Alt</kbd> + <kbd>j</kbd> | Switch to previous tab |
 | <kbd>Alt</kbd> + <kbd>k</kbd> | Switch to next tab |
 
-### Themes in use 
+## Themes in use 
  - Dark: [codedark](https://github.com/tomasiser/vim-code-dark) (w/ modified bg)<br>
  - Light: [PaperColor](https://github.com/NLKNguyen/papercolor-theme) (original)<br>
 
