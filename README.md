@@ -1,7 +1,8 @@
-Ny64's extraordinary ***VIM*** configuration
+Ny64's extraordinary *VIM* configuration
 --------------------------------------------
 
-The best vim configuration there is.
+The best vim configuration there is.<br>
+*No external plugins!* Download your new *VIM* configuration now and start hacking like the pros! 
 
 ## Bindings
 | Binding | Function |
@@ -14,4 +15,3 @@ The best vim configuration there is.
 ## Themes in use 
  - Dark: [codedark](https://github.com/tomasiser/vim-code-dark) (w/ modified bg)<br>
  - Light: [PaperColor](https://github.com/NLKNguyen/papercolor-theme) (original)<br>
-
