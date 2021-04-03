@@ -1,5 +1,5 @@
-Ny64's extraordinary *VIM* configuration
---------------------------------------------
+Ny64's extraordinary *VIM* configuration (never seen before)
+------------------------------------------------------------
 
 The best vim configuration there is.<br>
 *No external plugins!! SuPEr liGHtWeIgHt!1!*<br>
