@@ -3,7 +3,7 @@ set number
 
 " Syntax highlighting and colorscheme (F8 /Shift+F8 to change light/dark theme)
 syntax on
-colorscheme one
+colorscheme PaperColor
 set background=dark
 set colorcolumn=80  " set line delimiter
 highlight colorcolumn ctermbg=234
@@ -52,3 +52,4 @@ let g:netrw_winsize = 25
 "
 " Filetype specific identation
 " set Filetype [TYPE] tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
