@@ -3,7 +3,7 @@ set number
 
 " Syntax highlighting and colorscheme (F8 /Shift+F8 to change light/dark theme)
 syntax on
-colorscheme PaperColor
+colorscheme codedark
 set background=dark
 highlight Normal ctermbg=black
 set colorcolumn=80  " set line delimiter
@@ -12,11 +12,13 @@ let g:LightTheme = 0
 function! ChangeTheme()
     if g:LightTheme
         let g:LightTheme = 0
+        colorscheme codedark
         silent set background=dark
         silent highlight Normal ctermbg=black
         silent highlight colorcolumn ctermbg=234
     else 
         let g:LightTheme = 1
+        colorscheme PaperColor
         silent set background=light
         silent highlight colorcolumn ctermbg=lightgray
     endif
