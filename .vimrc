@@ -1,13 +1,16 @@
-" Display line numbers 
-set number
-
-" Syntax highlighting and colorscheme (F8 /Shift+F8 to change light/dark theme)
+" Appearance
 syntax on
+
 colorscheme codedark
 set background=dark
 highlight Normal ctermbg=black
-set colorcolumn=80  " set line delimiter
+
+set number
+highlight LineNr ctermbg=black
+
+set colorcolumn=80
 highlight colorcolumn ctermbg=234
+
 let g:LightTheme = 0
 function! ChangeTheme()
     if g:LightTheme
@@ -16,6 +19,7 @@ function! ChangeTheme()
         silent set background=dark
         silent highlight Normal ctermbg=black
         silent highlight colorcolumn ctermbg=234
+        highlight LineNr ctermbg=black
     else 
         let g:LightTheme = 1
         colorscheme PaperColor
@@ -36,7 +40,12 @@ nnoremap <M-j> :tabp<CR>
 nnoremap <M-k> :tabn<CR>
 
 " Netrw settings
+let g:netrw_liststyle = 3 
+let g:netrw_banner = 0
+let g:netrw_browse_split = 3
+let g:netrw_winsize = 25
 let g:NetrwIsOpen = 0
+
 function! ToggleNetrw() " netrw toggle function
     if g:NetrwIsOpen
         let i = bufnr("$")
@@ -53,10 +62,6 @@ function! ToggleNetrw() " netrw toggle function
     endif
 endfunction
 map <C-Bslash> :call ToggleNetrw()<CR>
-let g:netrw_liststyle = 3 
-let g:netrw_banner = 0
-let g:netrw_browse_split = 3
-let g:netrw_winsize = 25
 
 "+++++++++++++++++++++++++++++++++++ Notes +++++++++++++++++++++++++++++++++++"
 " Find string in files
