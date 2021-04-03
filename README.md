@@ -12,6 +12,6 @@ The best vim configuration there is.
 | <kbd>Alt</kbd> + <kbd>k</kbd> | Switch to next tab |
 
 ### Themes in use 
- - Dark: [PaperColor](https://github.com/NLKNguyen/papercolor-theme)<br>
+ - Dark: [codedark](https://github.com/tomasiser/vim-code-dark)<br>
  - Light: [PaperColor](https://github.com/NLKNguyen/papercolor-theme)<br>
 
