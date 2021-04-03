@@ -1,9 +1,7 @@
 vim-setup
 -------------------
 
-Simple .vimrc and colorschemes.
-A few plugins also. (# . .)
+Best vim configuration there is.
 
 #### Colorschemes used 
-
 [one](https://github.com/rakr/vim-one)<br>
