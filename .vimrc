@@ -5,10 +5,23 @@ set number
 syntax on
 colorscheme PaperColor
 set background=dark
+highlight Normal ctermbg=black
 set colorcolumn=80  " set line delimiter
 highlight colorcolumn ctermbg=234
-map <F8> :set background=light \| highlight colorcolumn ctermbg=lightgray<CR>
-map <S-F8> :set background=dark \| highlight colorcolumn ctermbg=234<CR>
+let g:LightTheme = 0
+function! ChangeTheme()
+    if g:LightTheme
+        let g:LightTheme = 0
+        silent set background=dark
+        silent highlight Normal ctermbg=black
+        silent highlight colorcolumn ctermbg=234
+    else 
+        let g:LightTheme = 1
+        silent set background=light
+        silent highlight colorcolumn ctermbg=lightgray
+    endif
+endfunction
+map <F8> :call ChangeTheme()<CR>
 
 " Space tab settings
 filetype indent plugin on
