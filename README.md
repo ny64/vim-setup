@@ -2,7 +2,7 @@ Ny64's extraordinary *VIM* configuration (never seen before)
 ------------------------------------------------------------
 
 The best vim configuration there is.<br>
-*No external plugins!! SuPEr liGHtWeIgHt!1!*<br>
+*No external plugins!! SuPEr liGHtwEiGhT!1!*<br>
 Download your new *VIM* configuration now and start hacking like the pros. 
 
 ## Bindings
