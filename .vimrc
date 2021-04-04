@@ -13,7 +13,7 @@ set colorcolumn=80
 highlight colorcolumn ctermbg=234
 
 let g:LightTheme = 0
-function! ChangeTheme()
+function! ToggleTheme()  " colortheme toggle function
     if g:LightTheme
         let g:LightTheme = 0
         colorscheme codedark
@@ -29,7 +29,7 @@ function! ChangeTheme()
         highlight colorcolumn ctermbg=lightgray
     endif
 endfunction
-map <F8> :call ChangeTheme()<CR>
+map <F8> :call ToggleTheme()<CR>
 
 " Space tab settings
 filetype indent plugin on
@@ -41,14 +41,14 @@ execute "set <M-k>=\ek"
 nnoremap <M-j> :tabp<CR>
 nnoremap <M-k> :tabn<CR>
 
-" Netrw settings
+" Netrw settings (file menu)
 let g:netrw_liststyle = 3 
 let g:netrw_banner = 0
 let g:netrw_browse_split = 3
 let g:netrw_winsize = 25
-let g:NetrwIsOpen = 0
 
-function! ToggleNetrw() " netrw toggle function
+let g:NetrwIsOpen = 0
+function! ToggleNetrw()  " netrw toggle function
     if g:NetrwIsOpen
         let i = bufnr("$")
         while (i >= 1)
