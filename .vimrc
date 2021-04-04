@@ -6,7 +6,7 @@ set background=dark
 highlight Normal ctermbg=black
 highlight EndOfBuffer ctermbg=black
 
-set number
+set number 
 highlight LineNr ctermbg=black
 
 set colorcolumn=80
@@ -64,6 +64,19 @@ function! ToggleNetrw() " netrw toggle function
     endif
 endfunction
 map <C-Bslash> :call ToggleNetrw()<CR>
+
+" Auto-close brackets and quotes
+inoremap ( ()<left>
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap [ []<left>
+inoremap { {}<left>
+
+" Skip closing quotes
+inoremap <expr> " strpart(getline('.'), col('.')-1, 1) == "\"" ? "\
+            \<Right>" : "\"\"\<Left>" 
+inoremap <expr> ' strpart(getline('.'), col('.')-1, 1) == "\'" ? "\
+            \<Right>" : "\'\'\<Left>"
 
 "+++++++++++++++++++++++++++++++++++ Notes +++++++++++++++++++++++++++++++++++"
 " Find string in files
