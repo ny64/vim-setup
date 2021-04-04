@@ -54,7 +54,7 @@ inoremap <expr> "
     \strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>" 
 inoremap <expr> ' 
     \strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
-"+++++++++++++++++++++++++++++ Netrw (feile menu) ++++++++++++++++++++++++++++"
+"+++++++++++++++++++++++++++++ Netrw (file menu) +++++++++++++++++++++++++++++"
 " Appearance
 let g:netrw_liststyle = 3 
 let g:netrw_banner = 0
