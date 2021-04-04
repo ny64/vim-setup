@@ -8,6 +8,7 @@ highlight Normal ctermbg=black
 highlight EndOfBuffer ctermbg=black
 " Line number settings
 set number 
+set ruler
 highlight LineNr ctermbg=black
 " Column delimiter settings
 set colorcolumn=80
@@ -54,6 +55,18 @@ inoremap <expr> "
     \strpart(getline('.'), col('.')-1, 1) == "\"" ? "\<Right>" : "\"\"\<Left>" 
 inoremap <expr> ' 
     \strpart(getline('.'), col('.')-1, 1) == "\'" ? "\<Right>" : "\'\'\<Left>"
+" Fix pasting from other application
+set pastetoggle=<F2>
+" Other
+set nowb
+set showcmd
+set hlsearch
+set nobackup
+set incsearch
+set smartcase
+set noswapfile
+set smartindent
+set noerrorbells
 "+++++++++++++++++++++++++++++ Netrw (file menu) +++++++++++++++++++++++++++++"
 " Appearance
 let g:netrw_liststyle = 3 
