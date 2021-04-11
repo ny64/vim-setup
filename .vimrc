@@ -69,7 +69,7 @@ set noswapfile
 set smartindent
 set noerrorbells
 
-" NETRW (fiel menu) 
+" NETRW (file menu) 
 " Appearance
 let g:netrw_liststyle = 3 
 let g:netrw_banner = 0
