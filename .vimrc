@@ -1,4 +1,4 @@
-"++++++++++++++++++++++++++++++++ Appearance +++++++++++++++++++++++++++++++++"
+" APPEARANCE
 " Syntax
 syntax on
 " Default colors
@@ -32,7 +32,8 @@ function! ToggleTheme()
     endif
 endfunction
 map <F8> :call ToggleTheme()<CR>
-"+++++++++++++++++++++++++++++++++ Behaviour +++++++++++++++++++++++++++++++++"
+
+" BEHAVIOUR
 " Space tab settings
 filetype indent plugin on
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
@@ -67,7 +68,8 @@ set smartcase
 set noswapfile
 set smartindent
 set noerrorbells
-"+++++++++++++++++++++++++++++ Netrw (file menu) +++++++++++++++++++++++++++++"
+
+" NETRW (fiel menu) 
 " Appearance
 let g:netrw_liststyle = 3 
 let g:netrw_banner = 0
@@ -91,7 +93,8 @@ function! ToggleNetrw()
     endif
 endfunction
 map <C-Bslash> :call ToggleNetrw()<CR>
-"+++++++++++++++++++++++++++++++++++ Notes +++++++++++++++++++++++++++++++++++"
+
+" NOTES
 " Find string in files
 " :vim foo **/*.js | copen   ()
 "
