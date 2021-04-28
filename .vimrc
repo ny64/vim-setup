@@ -60,6 +60,7 @@ inoremap <expr> '
 set pastetoggle=<F2>
 " Other
 set nowb
+set mouse=a
 set showcmd
 set hlsearch
 set nobackup
