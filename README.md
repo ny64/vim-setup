@@ -14,5 +14,5 @@ Download your new *VIM* configuration now and start hacking like the pros.
 | <kbd>Alt</kbd> + <kbd>k</kbd> | Switch to next tab |
 
 ## Themes in use 
- - Dark: [codedark](https://github.com/tomasiser/vim-code-dark) (w/ modified bg)<br>
+ - Dark: [wombat256grf](https://github.com/gryf/wombat256grf) (w/ modified bg)<br>
  - Light: [PaperColor](https://github.com/NLKNguyen/papercolor-theme) (original)<br>
