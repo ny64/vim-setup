@@ -2,7 +2,7 @@
 " Syntax
 syntax on
 " Default colors
-colorscheme codedark
+colorscheme wombat256grf 
 set background=dark
 highlight Normal ctermbg=black 
 highlight EndOfBuffer ctermbg=black
@@ -18,7 +18,7 @@ let g:LightTheme = 0
 function! ToggleTheme()  
     if g:LightTheme
         let g:LightTheme = 0
-        colorscheme codedark
+        colorscheme wombat256grf
         set background=dark
         highlight Normal ctermbg=black
         highlight EndOfBuffer ctermbg=black
