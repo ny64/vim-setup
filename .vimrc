@@ -13,6 +13,8 @@ highlight LineNr ctermbg=black
 " Column delimiter settings
 set colorcolumn=80
 highlight colorcolumn ctermbg=234
+" Italic comments
+highlight Comment cterm=italic gui=italic
 " Theme toggle function
 let g:LightTheme = 0
 function! ToggleTheme()  
