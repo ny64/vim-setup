@@ -45,7 +45,7 @@ execute "set <M-k>=\ek"
 nnoremap <M-j> :tabp<CR>
 nnoremap <M-k> :tabn<CR>
 " Consistently exit insert mode with <C-[>
-inoremap <C-[> <Esc>
+inoremap <C-;> <Esc>
 " Auto-close brackets
 inoremap ( ()<left>
 inoremap [ []<left>
