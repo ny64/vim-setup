@@ -2,7 +2,7 @@
 " Syntax
 syntax on
 " Default colors
-colorscheme wombat256grf 
+colorscheme jellybeans 
 set background=dark
 highlight Normal ctermbg=black 
 highlight EndOfBuffer ctermbg=black
@@ -15,17 +15,21 @@ set colorcolumn=80
 highlight colorcolumn ctermbg=234
 " Italic comments
 highlight Comment cterm=italic gui=italic
+" Force black background
+highlight Normal guibg=black guifg=white
+set background=dark
 " Theme toggle function
 let g:LightTheme = 0
 function! ToggleTheme()  
     if g:LightTheme
         let g:LightTheme = 0
-        colorscheme wombat256grf
-        set background=dark
+        colorscheme jellybeans
         highlight Normal ctermbg=black
         highlight EndOfBuffer ctermbg=black
         highlight colorcolumn ctermbg=234
         highlight LineNr ctermbg=black
+        highlight Normal guibg=black guifg=white
+        set background=dark
     else 
         let g:LightTheme = 1
         colorscheme PaperColor
@@ -44,7 +48,8 @@ execute "set <M-j>=\ej"
 execute "set <M-k>=\ek"
 nnoremap <M-j> :tabp<CR>
 nnoremap <M-k> :tabn<CR>
-" Consistently exit insert mode with <C-[>
+<<<<<<< HEAD
+" Is this a good way of exiting?
 inoremap <C-;> <Esc>
 " Auto-close brackets
 inoremap ( ()<left>

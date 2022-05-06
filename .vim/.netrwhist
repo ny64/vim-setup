@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/peter/Programming/sha256/src'
+let g:netrw_dirhist_7='/home/peter/Programming/sha256'
+let g:netrw_dirhist_6='/home/peter/Programming/sha256/src'
+let g:netrw_dirhist_5='/home/peter/Programming/sha256'
+let g:netrw_dirhist_4='/home/peter/Programming/sha256/src'
+let g:netrw_dirhist_3='/home/peter/Programming/sha256'
+let g:netrw_dirhist_2='/home/peter/Programming/sha256/src'
+let g:netrw_dirhist_1='/home/peter/Programming/sha256'
+let g:netrw_dirhist_0='/home/peter/Programming/sha256/src'
+let g:netrw_dirhist_9='/home/peter/OneDrive/educ/Studium/kids_term_4/opt/nlin/grad_desc'
