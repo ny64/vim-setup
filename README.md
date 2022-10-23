@@ -5,6 +5,10 @@ The best vim configuration there is.<br>
 *No external plugins!! SuPEr liGHtwEiGhT!1!*<br>
 Download your new *VIM* configuration now and start hacking like the pros. 
 
+## Installation
+You literally just move everything in here into your home directory. Especially
+the README.md.
+
 ## Bindings
 | Binding | Function |
 |---------|----------|
