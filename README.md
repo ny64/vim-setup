@@ -7,7 +7,7 @@ Download your new *VIM* configuration now and start hacking like the pros.
 
 ## Installation
 You literally just move everything in here into your home directory. Especially
-the README.md.
+the <code>README.md</code>.
 
 ## Bindings
 | Binding | Function |
