@@ -2,39 +2,29 @@
 " Syntax
 syntax on
 " Default colors
-colorscheme jellybeans 
+colorscheme monokai_pro
 set background=dark
-highlight Normal ctermbg=black 
-highlight EndOfBuffer ctermbg=black
 " Line number settings
 set number 
 set ruler
-highlight LineNr ctermbg=black
 " Column delimiter settings
 set colorcolumn=80
-highlight colorcolumn ctermbg=234
 " Italic comments
 highlight Comment cterm=italic gui=italic
 " Force black background
-highlight Normal guibg=black guifg=white
-set background=dark
+"highlight Normal guibg=black guifg=white
+"set background=dark
 " Theme toggle function
 let g:LightTheme = 0
 function! ToggleTheme()  
     if g:LightTheme
         let g:LightTheme = 0
-        colorscheme jellybeans
-        highlight Normal ctermbg=black
-        highlight EndOfBuffer ctermbg=black
-        highlight colorcolumn ctermbg=234
-        highlight LineNr ctermbg=black
-        highlight Normal guibg=black guifg=white
+        colorscheme monokai_pro
         set background=dark
     else 
         let g:LightTheme = 1
         colorscheme PaperColor
         set background=light
-        highlight colorcolumn ctermbg=lightgray
     endif
 endfunction
 map <F8> :call ToggleTheme()<CR>

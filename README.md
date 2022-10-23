@@ -14,5 +14,5 @@ Download your new *VIM* configuration now and start hacking like the pros.
 | <kbd>Alt</kbd> + <kbd>k</kbd> | Switch to next tab |
 
 ## Themes in use 
- - Dark: [Jellybeans](https://github.com/nanotech/jellybeans.vim) (w/ modified bg)<br>
- - Light: [PaperColor](https://github.com/NLKNguyen/papercolor-theme) (original)<br>
+ - Dark: [Monokai Pro](https://github.com/Erichain/vim-monokai-pro)<br>
+ - Light: [PaperColor](https://github.com/NLKNguyen/papercolor-theme)<br>
