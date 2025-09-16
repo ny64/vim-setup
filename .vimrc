@@ -38,8 +38,9 @@ execute "set <M-j>=\ej"
 execute "set <M-k>=\ek"
 nnoremap <M-j> :tabp<CR>
 nnoremap <M-k> :tabn<CR>
-" Is this a good way of exiting?
-imap <C-[> <ESC><ESC>
+" Fix exiting w/ CTRL+[
+set timeoutlen=1000
+set ttimeoutlen=5
 " Auto-close brackets
 inoremap ( ()<left>
 inoremap [ []<left>
